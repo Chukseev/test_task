@@ -47,8 +47,16 @@ docker compose up --build
 * **api** — DRF‑сервис
 
 
+## Документация
 
+### schema
+`/api/schema/`
+### docs
+`/api/docs/`
+### redoc
+`/api/redo/`
 ## Основные эндпоинты
+
 ### Просмотр продуктов
 `GET /api/products/`
 
