@@ -9,6 +9,8 @@ from .serializers import AddItemSerializer, OrderItemSerializer, OrderSerializer
 
 
 class AddItemToOrderView(APIView):
+    serializer_class = OrderSerializer
+
     def post(self, request, order_id):
         order = get_object_or_404(Order, id=order_id)
         serializer = AddItemSerializer(data=request.data)
